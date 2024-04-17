@@ -4,4 +4,4 @@ permalink: /
 title: 'Our Eleventy page'
 ---
 
-# Hola Medium!
+# Hola Mundo!
