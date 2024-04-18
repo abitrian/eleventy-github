@@ -1,0 +1,111 @@
+#docsNav {
+  background: transparent;
+  color: var(--docs-nav-color);
+  line-height: 1.6rem;
+  padding-left: 2rem;
+  box-sizing: border-box;
+  width: var(--docs-nav-min-width);
+  --_nav-item-marker-inset: -22px;
+}
+
+/* First level list */
+#docsNav>ol {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  padding-bottom: 1.5rem;
+}
+
+#docsNav summary {
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#docsNav summary::marker,
+#docsNav summary::-webkit-details-marker {
+  content: '';
+  display: none;
+}
+
+#docsNav .sectionHead,
+#docsNav .wrapper ol {
+  padding-inline-start: 0;
+}
+
+#docsNav .section-collapse {
+  margin-block: 1rem;
+}
+
+#docsNav .section-collapse[open] {
+  margin-block-end: 1.25rem;
+}
+
+#docsNav .section-collapse:first-of-type {
+  margin-block-start: 0rem;
+}
+
+#docsNav .marker {
+  position: absolute;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  transition: transform 0.1s ease-in-out;
+  transform-origin: center;
+  inset-inline-start: var(--_nav-item-marker-inset);
+}
+
+#docsNav details[open] .marker {
+  transform: rotate(90deg);
+}
+
+#docsNav .sectionHead {
+  font-size: .875rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: var(--color-navy);
+}
+
+/* Second level list */
+#docsNav .wrapper ol,
+#docsNav>ol>li>ol {
+  list-style: none;
+  padding-top: 0.2rem;
+}
+
+/* Second level list */
+#docsNav>ol>li>ol {
+  list-style: none;
+  padding-top: 0.2rem;
+  padding-left: 0;
+}
+
+#docsNav .wrapper ol {
+  margin-top: 1.5rem;
+}
+
+#docsNav li {
+  margin-bottom: 1.2rem;
+  color: var(--color-blue);
+}
+  #docsNav li:last-child {
+    margin-bottom: 0;
+  }
+
+/* Active page bullet */
+#docsNav li.active {
+  position: relative;
+  color: var(--color-navy);
+}
+
+#docsNav li.active::before {
+  content: '';
+  width: .5rem;
+  height: .5rem;
+  position: absolute;
+  inset-block-start: .5rem;
+  inset-inline-start: var(--_nav-item-marker-inset);
+  background-color: var(--color-core-blue);
+  border-radius: .5rem;
+}

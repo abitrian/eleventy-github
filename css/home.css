@@ -1,0 +1,51 @@
+@import url('./home/1-splash.css');
+@import url('./home/2-essence.css');
+@import url('./home/3-developing.css');
+
+.badge {
+  max-width: fit-content;
+  padding: .5rem;
+  border-radius: 2px;
+  background-color: var(--color-core-blue);
+  font-size: .875rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  color: #FFF;
+}
+  .badge.red {
+    background-color: var(--color-red);
+  }
+  .badge.blue {
+    background-color: var(--color-blue);
+  }
+
+.home-content {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+a:hover {
+  color: var(--color-navy);
+}
+
+
+/* tablet */
+@media screen and (min-width: 46.5rem) {
+  .home-content {
+    padding: 0 3rem;
+  }
+}
+
+/* xlarge desktop */
+@media screen and (min-width: 120rem) {
+  .home-content {
+    max-width: 120rem;
+  }
+}

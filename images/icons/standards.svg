@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="standards" viewBox="0 0 24 24" fill="none">
+    <path d="M4 18.3501L4 3L20 3V18.3501L12 21.9057L4 18.3501Z" stroke="currentcolor" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M9 3L5 4V18.5L9 20V3Z" fill="currentcolor"/>
+    <path d="M15 6H17V16L15 17V6Z" fill="currentcolor"/>
+    <path d="M11 6H13V18L12 18.5L11 18V6Z" fill="currentcolor"/>
+  </symbol>
+</svg>

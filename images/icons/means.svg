@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="means" viewBox="0 0 24 24" fill="none">
+    <circle cx="11" cy="11.5" r="10" stroke="currentcolor" fill="none" stroke-width="2"/>
+    <path fill="currentcolor" d="m7.714 7.5 3 3a1 1 0 0 1 0 1.414l-3 3L6.3 13.5l2.292-2.293L6.3 8.914 7.714 7.5Zm7.286 5v2h-2v-2h2Z"/>
+    <path fill="currentcolor" fill-rule="evenodd" d="M17.5 11.5c-.552 0-.99-.452-1.09-.995a5.505 5.505 0 0 0-4.415-4.415C11.452 5.99 11 5.552 11 5V1c5.799 0 10.5 4.701 10.5 10.5h-4Z" clip-rule="evenodd"/>
+    <path stroke="currentcolor" fill="none" stroke-width="2" d="M13 3.5a7.004 7.004 0 0 1 5.93 5.93"/>
+  </symbol>
+</svg>

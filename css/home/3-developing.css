@@ -1,0 +1,137 @@
+.developing {
+  background-color: var(--color-core-blue);
+  color: var(--color-core-light);
+}
+
+.developing-top {
+  padding: 3rem 0 0;
+}
+
+.developing-top h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.developing-top .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 200;
+}
+
+.logo-bbva {
+  display: none;
+}
+
+.developing-bottom {
+  padding: 3rem 0;
+}
+
+  .developing-bottom .badge {
+    background-color: var(--color-aqua);
+    color: var(--color-core-blue);
+  }
+
+  .developing-bottom p {
+    margin: 1.5rem 0;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    font-weight: 300;
+  }
+
+  .developing-bottom a {
+    color: var(--color-aqua);
+  }
+
+  .developing-bottom a:hover,
+  .developing-bottom a:active {
+    color: var(--color-aqua-dark);
+  }
+
+  .developing-bottom a span {
+    margin-left: .5rem;
+  }
+
+/* tablet */
+@media screen and (min-width: 46.5rem) {
+  .developing-top {
+    padding: 3rem 0;
+  }
+
+  .developing-top h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .developing-top .text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 3rem;
+    margin-top: 2rem;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+
+  .developing-top p {
+    flex: 1 0 50%;
+  }
+
+  .developing-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 3rem;
+    border-top: 1px solid var(--color-blue);
+  }
+  
+  .logo-bbva { 
+    display: block;  
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 64rem) {
+  .developing-top h2 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+}
+
+/* large desktop */
+@media screen and (min-width: 90rem) {
+  .developing .home-content {
+    display: flex;
+    gap: 3rem;
+    padding: 4.5rem 3rem;
+  }
+
+  .developing-top .text {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-top: 4.5rem;
+    padding: 0;
+  }
+
+  .developing-bottom {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    padding: 0;
+    border: none;
+  }
+
+  .opportunities {
+    padding-left: 4rem;
+    border-left: 1px solid var(--color-blue);
+  }
+
+}
+
+/* xlarge desktop */
+@media screen and (min-width: 120rem) {}

@@ -1,0 +1,22 @@
+.advantages {
+  padding: 1.5rem .5rem;
+  background-color: var(--color-grey-light);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--color-core-blue);
+}
+
+.advantages a {
+  margin-top: .5rem;
+}
+
+/* tablet */
+@media screen and (min-width: 46.5rem) {
+  .advantages .home-content {
+    display: flex;
+  }
+
+  .advantages a {
+    margin: 0 0 0 .5rem;
+  }
+}

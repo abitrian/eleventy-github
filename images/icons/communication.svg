@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="communication" viewBox="0 0 24 24" fill="currentcolor">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.2929 2.29289C18.1054 2.10536 17.851 2 17.5858 2H9C8.44772 2 8 2.44772 8 3V4H3C2.44772 4 2 4.44772 2 5V21C2 21.5523 2.44772 22 3 22H9H21C21.5523 22 22 21.5523 22 21V6.41421C22 6.149 21.8946 5.89464 21.7071 5.70711L18.2929 2.29289ZM8 20V14H10V20H20V8H17C16.4872 8 16.0645 7.61396 16.0067 7.11662L16 7V4H10V12H8V6H4V20H8Z"/>
+    <rect x="6" y="14" width="12" height="2"/>
+    <rect x="6" y="10" width="12" height="2"/>
+    <rect x="12" y="6" width="2" height="2"/>
+  </symbol>
+</svg>

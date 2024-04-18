@@ -1,0 +1,82 @@
+@import url('./fonts/archivo.css');
+@import url('./fonts/fira-mono.css');
+@import url('./header.css');
+@import url('./footer.css');
+@import url('./colors.css');
+
+html {
+  font-family: 'Archivo', sans-serif;
+  --header-nav-height: 4.5rem;
+  --header-height: var(--header-nav-height);
+  --content-max-width: 100%;
+}
+
+body, p, h1, h2 {
+  margin: 0;
+}
+
+main {
+  position: relative;
+  scroll-margin-top: var(--header-height);
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  color: var(--color-blue-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-blue);
+}
+
+code {
+  font-family: "Fira Mono", monospace;
+}
+
+svg {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+}
+
+/* On some platforms like Linux, a traditional scrollbar will be always visible
+   on the nav, which is quite distracting. This reproduces something similar to
+   macOS style on all platforms. */
+.minimalScroller::-webkit-scrollbar {
+  width: 15px;
+}
+.minimalScroller:hover::-webkit-scrollbar-thumb {
+  background: rgb(255 255 255 / 0.3);
+  background-clip: content-box !important;
+  border: 4px solid transparent;
+  border-radius: 10px;
+}
+
+/* Hide something visually in a way that screen readers will read. */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+figure {
+  display: inline-block;
+  width: 1.5rem;
+  margin: 0;
+}
+
+
+/* tablet */
+@media screen and (min-width: 46.5rem) {
+  html {
+    --content-max-width: 46rem;
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 75rem) {
+  html {
+    --content-max-width: 71.5rem;
+  }
+}

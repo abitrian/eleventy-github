@@ -1,0 +1,8 @@
+<!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+  <path fill="#072146" d="M2 11h20v2H2zm0-6h20v2H2zm0 12h20v2H2z"/>
+</svg> -->
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="menu" viewBox="0 0 24 24" fill="currentcolor">
+    <path d="M2 11h20v2H2zm0-6h20v2H2zm0 12h20v2H2z"/>
+  </symbol>
+</svg>
