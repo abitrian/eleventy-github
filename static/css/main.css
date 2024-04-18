@@ -1,1 +1,8 @@
-h1{color:gray;background-color:#000;text-align:center;padding:50px}/*# sourceMappingURL=main.css.map */
+h1 {
+  color: green;
+  background-color: black;
+  text-align: center;
+  padding: 50px;
+}
+
+/*# sourceMappingURL=main.css.map */
