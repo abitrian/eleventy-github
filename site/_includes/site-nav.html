@@ -1,0 +1,30 @@
+<li class="navItem{% if page.url.includes('/docs') %} active{% endif %}">
+  <a href="{{ site.baseurl }}/docs/">
+    <span>Documentation</span>
+    <svg>
+      <use xlink:href="{{ site.baseurl }}/images/icons/documentation.svg#documentation"></use>
+    </svg>
+  </a>
+</li>
+<li class="navItem">
+  <a
+    href="https://github.com/BBVA/open-cells"
+    target="_blank"
+    rel="noopener"
+    title="GitHub"
+    aria-label="GitHub"
+  >
+    <span>Github</span>
+    <svg>
+      <use xlink:href="{{ site.baseurl }}/images/icons/github.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li class="navItem">
+  <a href="#" class="search" aria-label="Site search" title="Site search">
+    <span>Search</span>
+    <svg>
+      <use xlink:href="{{ site.baseurl }}/images/icons/search.svg#search"></use>
+    </svg>
+  </button>
+</li>

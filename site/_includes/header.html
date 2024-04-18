@@ -1,0 +1,17 @@
+<header class="page-header">
+  <nav>
+    <a class="home-link" href="{{ site.baseurl }}/" aria-label="Home">
+      <img class="header-logo" src="{{ site.baseurl }}/images/logo.svg" alt="Cells Home" />
+    </a>
+
+    <ol id="desktopNav">
+      {% include 'site-nav.html' %}
+    </ol>
+
+    <a href="#" id="mobileMenuButton" aria-label="Open mobile navigation" title="Open mobile navigation">
+      <svg>
+        <use xlink:href="{{ site.baseurl }}/images/icons/menu.svg#menu"></use>
+      </svg>
+    </a>
+  </nav>
+</header>

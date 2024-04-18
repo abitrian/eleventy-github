@@ -1,0 +1,49 @@
+/* https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;1,300&display=swap */
+
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(/fonts/archivo/Archivo-ExtraLight.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(/fonts/archivo/Archivo-ExtraLightItalic.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/archivo/Archivo-Light.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/archivo/Archivo-LightItalic.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/archivo/Archivo-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Archivo';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/archivo/Archivo-BoldItalic.woff) format('woff');
+}

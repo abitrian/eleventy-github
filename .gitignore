@@ -1,21 +1,8 @@
-# Dependencies
-/node_modules
+.DS_Store
 
-# Misc
-/public
+node_modules
+_site/
 
-# Intellij
-/.idea
-
-# Sass
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
-
-# Visual Studio Code
-/.vscode
-.history
-
+.wireit
 gh-pages
 gh-pages.pub

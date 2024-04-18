@@ -1,0 +1,13 @@
+{% extends 'default.html' %}
+
+{% block head %}
+  {% inlinecss "home.css" %}
+  {% inlinecss "pagefind.css" %}
+  {% inlinejs "home.js" %}
+{% endblock %}
+
+{% block content %}
+  {% include "./home/1-splash.html" %}
+  {% include "./home/2-essence.html" %}
+  {% include "./home/3-developing.html" %}
+{% endblock %}

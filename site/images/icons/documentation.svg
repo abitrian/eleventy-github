@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="documentation" viewBox="0 0 24 24" fill="currentcolor">
+    <path d="M22 2.91693C22 2.36465 21.5523 1.91693 21 1.91693H3C2.44772 1.91693 2 2.36465 2 2.91693V21C2 21.5523 2.44772 22 3 22H21C21.5523 22 22 21.5523 22 21V2.91693ZM14 3.91693H20V19.9999H4V3.91693H10V5.91693H14V3.91693Z"/>
+    <rect x="6" y="16" width="12" height="2"/>
+    <rect x="6" y="12" width="12" height="2"/>
+    <rect x="6" y="8" width="2" height="2"/>
+  </symbol>
+</svg>

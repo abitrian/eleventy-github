@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="cells" viewBox="0 0 24 24" fill="currentcolor">
+    <path fill-rule="evenodd" d="M0 14a10 10 0 0 1 6.09-9.21L15.41.58C16.2.21 17.07 0 18 0c3.31 0 6 2.69 6 6 0 .93-.21 1.81-.58 2.59l-4.21 9.32A10 10 0 0 1 10 24C4.48 24 0 19.52 0 14ZM16.24 2.41a3.999 3.999 0 0 1 5.37 5.31l-4.23 9.36C16.11 20.09 13.22 22 10 22c-4.41 0-8-3.59-8-8 0-3.22 1.92-6.11 4.88-7.37l9.36-4.22Z" clip-rule="evenodd"/>
+    <path fill-rule="evenodd" d="M16 14a6 6 0 1 1-12 0 6 6 0 0 1 12 0Zm-4 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" clip-rule="evenodd"/>
+    <path d="M18 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+  </symbol>
+</svg>

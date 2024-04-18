@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>{% if title %}{{ title }} {% endif %} - Cells</title>
+    <meta name="description" content="Simple. Fast. Web Components.">
+    <link rel="icon" href="{{ site.baseurl }}/images/cells-favicon.svg">
+    <link rel="mask-icon" href="{{ site.baseurl }}/images/cells-favicon.svg" color="#324fff">
+
+    {% inlinecss "prism.css" %}
+    {% inlinecss "pagefind.css" %}
+    {% inlinecss "global.css" %}
+    {% inlinecss "mods.css" %}
+    {% inlinecss "mobile-nav.css" %}
+    {% inlinecss "docs-nav.css" %}
+    {% inlinejs "global.js" %}
+
+    {% block head %}{% endblock %}
+  </head>
+  
+  <body>
+    <dialog id="search" class="pagefind-search"></dialog>
+    {% include 'mobile-site-nav.html' %}
+    {% include 'header.html' %}
+
+    <main>
+      {% block content %}
+        <article data-pagefind-body>
+          {{ content | safe }}
+        </article>
+      {% endblock %}
+    </main>
+
+    {% include 'footer.html' %}
+
+    <script src="{{ site.baseurl }}/js/prism.js"></script>
+    <script src="{{ site.baseurl }}/pagefind/pagefind-ui.js" onload="new PagefindUI({ element: '#search', showImages: false });"></script>
+  </body>
+</html>

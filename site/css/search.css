@@ -1,0 +1,87 @@
+html {
+  --search-modal-padding-inline: 25px;
+  --search-modal-padding-block: 15px;
+  --_button-block-padding: 4px;
+  --_button-content-height: 24px;
+  /* (content height + total block padding) / 2 */
+  --_button-radius: calc(
+    (var(--_button-content-height) + var(--_button-block-padding) * 2) / 2
+  );
+  display: block;
+}
+
+button {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding-block: var(--_button-block-padding);
+  /* must be same as block to make icon co-centric */
+  padding-inline-start: var(--_button-block-padding);
+  padding-inline-end: var(--_button-radius);
+  border: 1px solid currentColor;
+  /* idk what it is but the +1 makes it much rounder */
+  border-radius: calc(var(--_button-radius) + 1px);
+}
+
+lazy-svg::part(svg) {
+  width: var(--_button-content-height);
+  height: var(--_button-content-height);
+}
+
+button span {
+  margin-inline-start: 8px;
+  font-size: 0.9em;
+}
+
+dialog {
+  padding: 0;
+  border: none;
+  inset-block: 60px auto;
+  background-color: transparent;
+  box-shadow: rgb(0 0 0 / 20%) 0px 11px 15px -7px,
+    rgb(0 0 0 / 14%) 0px 24px 38px 3px, rgb(0 0 0 / 12%) 0px 9px 46px 8px;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.32);
+}
+
+#content {
+  padding: var(--search-modal-padding-block)
+    var(--search-modal-padding-inline);
+  box-sizing: border-box;
+  width: 745px;
+  max-width: 745px;
+  background-color: var(--color-grey-light);
+  border-radius: 5px;
+}
+
+@media (max-width: 864px) {
+  dialog {
+    inset: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #content {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 0;
+  }
+
+  litdev-search {
+    flex-grow: 1;
+  }
+}

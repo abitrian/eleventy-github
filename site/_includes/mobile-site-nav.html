@@ -1,0 +1,17 @@
+<aside class="mobileNav">
+  <a class="go-home" href="{{ site.baseurl }}/" aria-label="Home">
+    <img src="{{ site.baseurl }}/images/logo.svg" alt="Cells Home" />
+  </a>
+  <nav class="mobileSiteNav">
+    <ol>
+      {% include 'site-nav.html' %}
+    </ol>
+  </nav>
+  
+  <nav id="docsNav">
+    <ol class="first-level">
+      {% include 'docs-nav.html' %}
+    </ol>
+  </nav>
+</aside>
+<div class="veil"></div>
