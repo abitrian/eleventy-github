@@ -422,6 +422,7 @@ module.exports = function (eleventyConfig) {
       input: 'site', 
       output: ENV.eleventyOutDir
     },
+    pathPrefix: "/eleventy-github/",
     htmlTemplateEngine: 'njk',
     // TODO: Switch markdown to Nunjucks
     // markdownTemplateEngine: 'njk',
