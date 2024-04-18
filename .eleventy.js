@@ -21,7 +21,8 @@ const markdownItAttrs = require('markdown-it-attrs');
 const path = require('path');
 const pluginTOC = require('eleventy-plugin-nesting-toc');
 const slugifyLib = require('slugify');
-const eleventyHtmlBasePlugin = require("@11ty/HtmlBasePlugin");
+const leventyHtmlBasePlugin = require("@11ty/eleventy-plugin-syntaxhighlight");
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 // Use the same slugify as 11ty for markdownItAnchor. It's similar to Jekyll,
 // and preserves the existing URL fragments
@@ -43,7 +44,7 @@ module.exports = function (eleventyConfig) {
   
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
-  eleventyConfig.addPlugin(eleventyHtmlBasePlugin);
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
   eleventyConfig.addPassthroughCopy('site/css');
   eleventyConfig.addPassthroughCopy('site/js');
