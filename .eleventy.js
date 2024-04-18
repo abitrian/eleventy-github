@@ -42,6 +42,7 @@ module.exports = function (eleventyConfig) {
   
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 
   eleventyConfig.addPassthroughCopy('site/css');
   eleventyConfig.addPassthroughCopy('site/js');
