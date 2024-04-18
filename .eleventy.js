@@ -43,10 +43,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
 
-  eleventyConfig.addPassthroughCopy('./site/css');
-  eleventyConfig.addPassthroughCopy('./site/js');
-  eleventyConfig.addPassthroughCopy('./site/fonts');
-  eleventyConfig.addPassthroughCopy('./site/images');
+  eleventyConfig.addPassthroughCopy('site/css');
+  eleventyConfig.addPassthroughCopy('site/js');
+  eleventyConfig.addPassthroughCopy('site/fonts');
+  eleventyConfig.addPassthroughCopy('site/images');
 
   // Placeholder shortcode for TODOs
   // Formatting is intentional: outdenting the HTML causes the
